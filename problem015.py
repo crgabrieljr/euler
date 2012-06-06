@@ -9,11 +9,11 @@ right1, right2, right3, ... down1, down2, down3, ...
 The solution turns out to be the number of permutations
 of that list with the duplications factored out.
 
-For a square grid, this is conveniently n choose 0.5*n where
-n is the size of the grid or n! / ((0.5n)!)^2
+For a square grid, this is conveniently 2*n choose n where
+n is the size of the grid or 2*n! / (n!)^2
 
-For a non-square grid, it is n! / width! / height! or
-n! / (width! * height!)
+For a non-square grid, it is (width+height)! / width! / height! or
+(width+height)! / (width! * height!)
 """
 
 from math import factorial
